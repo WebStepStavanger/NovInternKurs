@@ -34,6 +34,7 @@ namespace Bank.Tests
             Assert.AreEqual("Brattetaule, Øystein", accounts[0].CustomerName);
             Assert.AreEqual("Fatland, Roy", accounts[1].CustomerName);
             Assert.AreEqual("Skov, Mikael", accounts[2].CustomerName);
+            mockContext.Verify(p => p.BankAccounts, Times.Once);
         }
     }
 }

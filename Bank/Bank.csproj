@@ -42,6 +42,7 @@
     <Compile Include="BankAccount.cs" />
     <Compile Include="BankAccounts.cs" />
     <Compile Include="BankContext.cs" />
+    <Compile Include="Interfaces\IBankAccounts.cs" />
     <Compile Include="Interfaces\IBankContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

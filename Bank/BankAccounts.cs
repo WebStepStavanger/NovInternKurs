@@ -1,20 +1,21 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Bank.Interfaces;
 
 namespace Bank
 {
     public class BankAccounts : IBankAccounts
     {
-        private readonly BankContext bankContext = new BankContext();
+        private readonly IBankContext context;
         
+        public BankAccounts(IBankContext context)
+        {
+            this.context = context;
+        }
+
         public List<BankAccount> GetBankAccounts()
         {
-            return bankContext.BankAccounts.ToList();
+            return context.BankAccounts.OrderBy(c => c.CustomerName).ToList();
         }
-    }
-
-    public interface IBankAccounts
-    {
-        List<BankAccount> GetBankAccounts();
     }
 }

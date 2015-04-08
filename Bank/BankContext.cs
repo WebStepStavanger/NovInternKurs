@@ -11,7 +11,7 @@ namespace Bank
             {
                 return new List<BankAccount>
                 {
-                    new BankAccount("Skov, Mikael", -200000),
+                    new BankAccount("Skov, Mikael", -99999.99),
                     new BankAccount("Brattetaule, Øystein", 1.56),
                     new BankAccount("Fatland, Roy", 1435243.99)
                 };

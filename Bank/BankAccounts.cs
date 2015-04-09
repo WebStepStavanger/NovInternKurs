@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Bank.Interfaces;
 
 namespace Bank
 {
@@ -13,8 +14,5 @@ namespace Bank
         }
     }
 
-    public interface IBankAccounts
-    {
-        List<BankAccount> GetBankAccounts();
-    }
+    
 }
